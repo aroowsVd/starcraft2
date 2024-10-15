@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" class="loading not_yet">
+<head>
+	<!-- meta set -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, target-desityDpi=medium-dpi">
+	<title>StarCraft II</title>
+
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/fontawesome_all.min.css">
+	<link type="text/css" rel="stylesheet" href="css/slick.css">
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css">
+	<link type="text/css" rel="stylesheet" href="css/common.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/btn.css">
+	<link type="text/css" rel="stylesheet" href="css/responsive.css">
+
+	<!-- javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/three.js"></script>
+</head>
+<body class="top">
+	<div class="logo_con">
+        <div class="img_con"><img src="img/title_split/01.webp"></div>
+        <div class="img_con"><img src="img/title_split/02.webp"></div>
+        <div class="img_con"><img src="img/title_split/03.webp"></div>
+        <div class="img_con"><img src="img/title_split/04.webp"></div>
+        <div class="img_con"><img src="img/title_split/05.webp"></div>
+        <div class="img_con"><img src="img/title_split/06.webp"></div>
+        <div class="img_con"><img src="img/title_split/07.webp"></div>
+        <div class="img_con"><img src="img/title_split/08.webp"></div>
+        <div class="img_con"><img src="img/title_split/09.webp"></div>
+        <img src="img/title_split/full.webp">
+        <div class="spark spark_01"><div></div></div>
+        <div class="spark spark_02"><div></div></div>
+        <div class="spark spark_03"><div></div></div>
+    </div>
+	<div class="wrap">
+		<div class="nav_cover"></div>
+		<header id="header" class="sections section_00">
+			<div class="width_con no_pd">
+				<a class="btn_home" href="">
+					<img src="img/bi_starcraft2_w_short.svg" alt="logo home">
+				</a>
+				<nav class="nav_con">
+					<i class="fa-regular fa-bars"></i>
+					<i class="fa-solid fa-xmark"></i>
+					<ul class="nav">
+						<li>
+							<a href="#visual">intro<span></span></a>
+						</li><!--
+					 --><li>
+							<a href="#overview">overview<span></span></a>
+					 	</li><!--
+					 --><li>
+							<a href="#about">about<span></span></a>
+					 	</li><!--
+					 --><li>
+							<a href="#races">races<span></span></a>
+					 	</li><!--
+					 --><li>
+							<a href="#modes">modes<span></span></a>
+					 	</li><!--
+					 --><li>
+							<a href="#news">news<span></span></a>
+					 	</li><!--
+					 --><li>
+							<a href="#collection">collection<span></span></a>
+					 	</li>
+					</ul>
+					<ul class="nav_customer">
+						<li>
+							<a href="#">
+								<i class="fa-light fa-user"></i>
+								USER
+							</a>
+						</li><!--
+					 --><li>
+							<a href="#">
+								SIGN UP
+							</a>
+					 	</li><!--
+					 --><li>
+							<a href="#">
+								SUPPORT
+							</a>
+					 	</li><!--
+					 --><li>
+							<a href="#">
+								BLIZZARD
+							</a>
+					 	</li><!--
+					 --><li>
+							<a href="#">
+								BATTLE.NET
+							</a>
+					 	</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- visual -->
+		<section id="visual" class="sections section_01">
+			<div class="fixed_bg"></div>
+			<div class="width_con no_pd">
+				<div class="title_con center middle">
+					<h1>
+						<img src="./img/bi_starcraft_w_h.webp" alt="StarCraft logo">
+					</h1>
+					<h4>The ultimate real-time strategy game</h4>
+					<h5>REAL-TIME STRATEGY • FREE TO PLAY</h5>
+					<div class="btn_con">
+						<a class="btn btn_a" href="javascript:;">Play Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- overview -->
+		<section id="overview" class="sections section_02">
+			<div class="fixed_bg"></div>
+			<div class="fixed_bg"></div>
+			<div class="width_con">
+				<div class="interface">
+					<img class="horz" src="img/bg_interface.webp" alt="interface">
+					<img class="vrtc" src="img/bg_interface_tablet.webp" alt="tablet interface">
+					<ul class="v_con two_con">
+						<li class="cells">
+							<a class="box box_hover">
+								<div class="ratio_16x9">
+									<img src="img/bg_about.webp" class="thumbnail" id="video_thumbnail" alt="Video Thumbnail">
+									<button class="play_btn" id="play_btn"></button>
+								</div>
+								<iframe id="video_iframe" src="https://www.youtube.com/embed/8L4kNzTNnqk?enablejsapi=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+							</a>
+						</li><!--
+				     --><li class="cells">
+							<div class="ratio_16x9"></div>
+							<div class="title_con middle no_mgbt">
+								<h3>OVERVIEW</h3>
+								<h2>The galaxy is yours to conquer</h2>
+								<h4>Experience the game that redefined the real-time strategy genre. Terran, Zerg, or Protoss – do you have what it takes to become the galaxy's greatest commander?</h4>
+								<h5>Show your strategy on the battlefield</h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<video loop autoplay muted playsinline>
+				<source type="video/mp4" src="img/bg_visual_effect.webm">
+			</video>
+		</section>
+
+		<!-- about -->
+		<section id="about" class="sections section_03">
+			<div class="width_con">
+                <div class="title_con center">
+                    <h3>STARCRAFTII</h3>
+                    <h2>GAME FEATURES</h2>
+                    <h4>With large parts of StarCraft II’s single-player and multiplayer modes accessible for<br>free, it’s never been a better time to begin your StarCraft II story!</h4>
+                    <h5>StarCraft 2 is a real-time strategy (RTS) game developed by Blizzard Entertainment, and it is the second installment in the<br>StarCraft series. Released in 2010, the game has gained massive popularity for its intricate storyline and strategic<br>gameplay, which revolves around the three races: Terran, Zerg, and Protoss. It offers various modes,<br>including a campaign, multiplayer, and cooperative modes.</h5>
+                </div>
+                <ul class="v_con four_con">
+                    <li class="cells">
+                        <div class="box ratio_16x9">
+                            <img src="img/img_about_01.webp" alt="three powerful races image">
+                        </div>
+                        <div class="text_box">
+                            <h4 class="mineral">3 POWERFUL RACES</h4>
+                            <h5>Command the mechanized Terrans, psi-powered Protoss, and insectoid Zerg.</h5>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <div class="box ratio_16x9">
+                            <img src="img/img_about_02.webp" alt="the first campaign free image">
+                        </div>
+                        <div class="text_box">
+                            <h4 class="mineral">THE FIRST CAMPAIN FREE</h4>
+                            <h5>Lead the Terrans across the galaxy in a quest for glory, redemption, and revenge. Want to continue the story? Full-length Zerg, and Protoss campaigns are available for purchase.</h5>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <div class="box ratio_16x9">
+                            <img src="img/img_about_03.webp" alt="legendary multiplayer image">
+                        </div>
+                        <div class="text_box">
+                            <h4 class="mineral">LEGENDARY MULTIPLAYER</h4>
+                            <h5>Grow your skills and climb the multiplayer ladder in the world’s premier real-time-strategy esport.</h5>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <div class="box ratio_16x9">
+                            <img src="img/img_about_04.webp" alt="free arcade mode image">
+                        </div>
+                        <div class="text_box">
+                            <h4 class="mineral">FREE ARCADE MODES</h4>
+                            <h5>StarCraft Arcade mode is a platform where players can enjoy a variety of user-created maps and game modes.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+		</section>
+
+		<!-- races -->
+		<section id="races" class="sections section_04">
+			<div class="width_con">
+				<div class="title_con center">
+                    <h3>INTRODUCE</h3>
+                    <h2>THREE TYPES OF RACES</h2>
+                    <h4>Here’s an introduction to the three races in StarCraft 2: Terran, Zerg, and Protoss.<br>Each race has distinct characteristics, units, and strategies, making gameplay diverse and strategic.</h4>
+                    <h5>Each race can be chosen based on the style of play, and it is important to use tactics that fit the unit composition and strategy</h5>
+                </div>
+				<ul class="v_con two_con">
+					<li class="cells">
+						<ul class="v_con three_con">
+							<li class="cells box box_hover ratio_1x1 active">
+								<div class="races_box">
+									<div class="protoss">
+										<img src="img/img_icon_protoss.svg" alt="protoss icon">
+									</div>
+									<h4>protoss</h4>
+								</div>
+							</li><!--
+						 --><li class="cells box box_hover ratio_1x1">
+								<div class="races_box">
+									<div class="terran">
+										<img src="img/img_icon_terran.svg" alt="terran icon">
+									</div>
+									<h4>terran</h4>
+								</div>
+						 	</li><!--
+						 --><li class="cells box box_hover ratio_1x1">
+								<div class="races_box">
+									<div class="zerg">
+										<img src="img/img_icon_zerg.svg" alt="zerg icon">
+									</div>
+									<h4>zerg</h4>
+								</div>
+						 	</li>
+						</ul>
+						<div class="races_desc box">
+							<div class="bg_race_mask"></div>
+							<div class="title_con active">
+								<h3>PROTOSS</h3>
+								<h4>Protoss units are individually strong and supported
+									by a shield system, making them resilient in battle. 
+									Although more expensive, each Protoss unit
+									packs a significant punch</h4>
+								<h5>Protoss can use Warp Gates to summon units directly to the
+									battlefield, allowing for swift reinforcements. Their shields 
+									regenerate over time, giving them additional durability
+									during prolonged battles.</h5>
+							</div>
+							<div class="title_con">
+								<h3>TERRAN</h3>
+								<h4>Terrans are known for their ability to adapt to any situation, relying on their flexible units and strong defense structures.</h4>
+								<h5>Terran buildings can be relocated, allowing for quick tactical adjustments. Their combination of infantry and mechanized units makes them versatile in both offensive and defensive strategies.</h5>
+							</div>
+							<div class="title_con">
+								<h3>ZERG</h3>
+								<h4>Zerg are notorious for their ability to rapidly reproduce and overwhelm opponents with sheer numbers. Their strength lies in speed, expansion, and relentless aggression.</h4>
+								<h5>Zerg units are produced in large quantities at a low cost. Their ability to quickly swarm the map gives them an edge in controlling territory and pressuring enemies early in the game.</h5>
+							</div>
+						</div>
+					</li><!--
+				 --><li class="cells">
+						<div class="races_chtr_box">
+							<div class="race_chtr glitch active">
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+							</div>
+							<div class="race_chtr glitch">
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+							</div>
+							<div class="race_chtr glitch">
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+								<div class="glitch_img"></div>
+							</div>
+							<div class="race_portal_hud">
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_01.svg">
+								</div>
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_02.svg">
+								</div>
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_03.svg">
+								</div>
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_04.svg">
+								</div>
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_05.svg">
+								</div>
+								<div class="hud">
+									<img class="rotate" src="img/img_circle_06.svg">
+								</div>
+							</div>
+							<div class="race_portal"></div>
+						</div>
+				 	</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- modes -->
+		<section id="modes" class="sections section_05">
+			<div class="width_con">
+				<ul class="v_con two_con">
+					<li class="cells">
+						<div class="title_con">
+							<h3>INFORMATION</h3>
+							<h2>GAME MODES</h2>
+							<h4>Whether you prefer a cinematic story campaign, best-in-class<br>multiplayer competition, specialized custom games in the Arcade,<br>or social and collaborative Co-op, StarCraft II has a mode for you.</h4>
+							<h5>Each mode has its own goal and style of play, so you can choose according to your preference.</h5>
+						</div>
+						<ul class="v_con three_con starcraft2_gallery">
+							<li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery01.webp" alt="gallery 1">
+							</li><!--
+						 --><li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery02.webp" alt="gallery 2">
+							</li><!--
+						 --><li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery03.webp" alt="gallery 3">
+							</li><!--
+						 --><li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery04.webp" alt="gallery 4">
+							</li><!--
+						 --><li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery05.webp" alt="gallery 5">
+							</li><!--
+						 --><li class="cells ratio_16x9 box">
+								<img src="img/img_mode_gallery06.webp" alt="gallery 6">
+							</li>
+						</ul>
+						<script>
+							$(".starcraft2_gallery").slick({
+								// autoplay: true,
+								autoplaySpeed: 2500,//자동넘김 시간
+								arrows: true,       //이전&다음 화살표
+								centerMode: false,  //가운데 모드 활성화
+								dots: true,         //도트표시기 활성화
+								infinite: true,     //처음과 끝 이어줌(루프)
+								slidesToShow: 3,     //n개씩 보여주기
+								slidesToScroll: 1,   //n개씩 넘어가기
+								swipeToSlide: true,  //스와이프 한만큼 보여주기                    
+								pauseOnHover: true   //마우스 올리면 일시정지
+							});
+						</script>
+					</li><!--
+				 --><li class="cells">
+						<ul class="tab_lists">
+							<li class="tab active"><h4>STORY</h4></li><!--
+						 --><li class="tab"><h4>VERSUS</h4></li><!--
+						 --><li class="tab"><h4>CO-OP</h4></li><!--
+						 --><li class="tab"><h4>CUSTOM & ARCADE</h4></li>
+						</ul>
+						<div class="modes_con ratio_16x9 box">
+							<div class="modes_box active">
+								<img src="img/img_mode_story.webp" alt="story img">
+								<div class="text_box">
+									<h4 class="mineral">WINGS OF LIBERTY</h4>
+									<h4 class="mineral">HEART OF THE SWARM</h4>
+									<h4 class="mineral">LEGACY OF THE VOID</h4>
+								</div>
+							</div>
+							<div class="modes_box">
+								<img src="img/img_mode_versus.webp" alt="versus img">
+								<div class="text_box">
+									<h4 class="mineral">RANKED MATCH</h4>
+									<h4 class="mineral">UNRANKED MATCH</h4>
+								</div>
+							</div>
+							<div class="modes_box">
+								<img src="img/img_mode_coop.webp" alt="co-op img">
+								<div class="text_box">
+									<h4 class="mineral">COMMANDER SYSTEM</h4>
+									<h4 class="mineral">LEVELING SYSTEM</h4>
+								</div>
+							</div>
+							<div class="modes_box">
+								<img src="img/img_mode_arcade.webp" alt="arcade img">
+								<div class="text_box">
+									<h4 class="mineral">USER CUSTOM MAP</h4>
+									<h4 class="mineral">VARIETY OF GENERS</h4>
+								</div>
+							</div>
+						</div>
+				 	</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- news -->
+		<section id="news" class="sections section_06">
+			<div class="width_con">
+				<ul class="v_con two_con">
+					<li class="cells">
+						<div class="title_con">
+							<h3>ESPORTS & GAME UPDATES</h3>
+							<h2>LATEST NEWS</h2>
+							<h4>Stay updated with the latest news and updates in StarCraft II.<br>From pro league highlights to community events,<br>we’ve got all the information you need.</h4>
+							<h5>community events are buzzing with activity! There are plenty of tournaments<br>and fun custom games for fans to participate in, so make sure to join in<br>and let your creativity shine!</h5>
+						</div>
+				 	</li><!--
+				 --><li class="cells">
+						<ul class="v_con one_con">
+							<li class="cells box box_hover">
+								<div class="news_img_con ratio_16x9">
+									<img src="img/img_news_01.webp" alt="news 1">
+								</div><!--
+							 --><div class="news_text_box">
+									<h4>Esports World Cup 2024 Club Championship:All you need to know</h4>
+									<div class="three_ellipsis">
+										<h5>Esports World Cup 2024 officially kicks off today with theopening show starting in a few hours. The eight-week long esports festival features 21 esports titles and top teams</h5>
+									</div>
+									<h6>Jul 3,2024</h6>
+								</div>
+							</li><!--
+						 --><li class="cells box box_hover">
+								<div class="news_img_con ratio_16x9">
+									<img src="img/img_news_02.webp" alt="news 2">
+								</div><!--
+							 --><div class="news_text_box">
+									<h4>Esports World Cup to host the Esports Awards 2024</h4>
+									<div class="three_ellipsis">
+										<h5>Earlier today, the Esports Awards and the Esports World Cup Federation (EWCF) announced a three-year partnership, bringing one of the most prestigious awards in esports to the Esports World Cup. On August 24th, the Esports World Cup in Riyadh will host the Esports Awards 2024,honoring the year’s biggest achievers in esports.</h5>
+									</div>
+									<h6>Jun 8,2024</h6>
+								</div>
+							</li><!--
+						 --><li class="cells box box_hover">
+								<div class="news_img_con ratio_16x9">
+									<img src="img/img_news_03.webp" alt="news 3">
+								</div><!--
+							 --><div class="news_text_box">
+									<h4>New RTS Game by StarCraft 2's David Kim To Revolutionize Genre</h4>
+									<div class="three_ellipsis">
+										<h5>The real-time strategy (RTS) genre is poised for a significant transformation with the introduction of a new game spearheaded by David Kim, the former lead developer of StarCraft 2. This project promises to redefine the strategic gameplay dynamics that have characterized RTS games for decades. This upcoming game is expected to shift the paradigm of RTS games by making strategic depth and decision-making more central to gameplay, moving away from the rapid execution speed that defined previous titles like StarCraft.</h5>
+									</div>
+									<h6>Apr 25,2024</h6>
+								</div>
+						 	</li><!--
+						 --><li class="cells box box_hover">
+								<div class="news_img_con ratio_16x9">
+									<img src="img/img_news_04.webp" alt="news 4">
+								</div><!--
+							 --><div class="news_text_box">
+									<h4>ESL SC2 Pro Tour Spring 24 Regionals - All you need to know</h4>
+									<div class="three_ellipsis">
+										<h5>In the world of competitive StarCraft II, the ESL SC2 Pro Tour Spring Season closed qualifiers details have been announced. Set to commence from April 10th, this season marks the fourth installment of the tournament. Exciting offline finals at DreamHack Dallas Players and fans alike can anticipate thrilling matches as the ESL SC2 Pro Tour Masters Spring unfolds. Scheduled from May 31st to June 2nd, the offline Finals will take place at DreamHack Dallas. Notably, the top four semifinalists from</h5>
+									</div>
+									<h6>Apr 10,2024</h6>
+								</div>
+						 	</li><!--
+						--><li class="cells box box_hover">
+								<div class="news_img_con ratio_16x9">
+									<img src="img/img_news_05.webp" alt="news 5">
+								</div><!--
+							 --><div class="news_text_box">
+									<h4>MoistCr1TiKaL voices frustrations over US Visas for Esports teams</h4>
+									<div class="three_ellipsis">
+										<h5>Charles “MoistCr1TiKaL” Christopher White Jr. is often seen as one of the voices of reason on the internet. Frequently seen commenting and critiquing various entities and personalities within the space, he is also a part-owner within the esports industry. Known as Moist Esports, the organization has teams competing in some of the most notable FPS and Fighting Games titles in esports; including VALORANT, Apex Legends, Brawlhalla, Super Smash Bros, and Melee to name a few. Recently the internet personality has</h5>
+									</div>
+									<h6>Mar 8,2024</h6>
+								</div>
+							</li>
+						</ul>
+						<h4 class="toggle_btn">show more</h4>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- collection -->
+		<section id="collection" class="sections section_07">
+			<div class="width_con">
+				<div class="title_con center">
+					<h3>SELECT A PRODUCT</h3>
+					<h2>STARCRAFT II CAMOAIGN COLLECTION</h2>
+					<h4>The StarCraft II Campaign Collection is a comprehensive package that includes all story modes<br>from Blizzard's iconic RTS game, StarCraft II. Players can immerse themselves in the unique narratives of the<br>Terran, Zerg, and Protoss factions while enjoying strategic combat.</h4>
+					<h5>If you want to fully immerse yourself in the world of StarCraft II, this campaign collection is a must-have.</h5>
+				</div>
+				<ul class="v_con four_con">
+					<li class="cells">
+						<div class="collection_img_con ratio_16x9">
+							<img src="img/img_collection01.webp" alt="collection 1st image">
+						</div>
+						<h4>Nova Covert Ops Bundle</h4>
+						<h5 class="dollar">118<span>.00</span></h5>
+						<div class="btn_con center">
+							<a class="btn" href="javascript:;">SELECT</a>
+						</div>
+					</li><!--
+				 --><li class="cells">
+						<div class="collection_img_con ratio_16x9">
+							<img src="img/img_collection02.webp" alt="collection 2nd image">
+						</div>
+						<h4>Campaign Collection</h4>
+						<h5 class="dollar">27<span>.09</span></h5>
+						<div class="btn_con center">
+							<a class="btn" href="javascript:;">SELECT</a>
+						</div>
+				 	</li><!--
+				 --><li class="cells">
+						<div class="collection_img_con ratio_16x9">
+							<img src="img/img_collection03.webp" alt="collection 3rd image">
+						</div>
+						<h4>Campaign Collection Digital Deluxe</h4>
+						<h5 class="dollar">42<span>.15</span></h5>
+						<div class="btn_con center">
+							<a class="btn" href="javascript:;">SELECT</a>
+						</div>
+				 	</li><!--
+				 --><li class="cells">
+						<div class="collection_img_con ratio_16x9">
+							<img src="img/img_collection04.webp" alt="collection 4th image">
+						</div>
+						<h4>StarCraft® II</h4>
+						<h5 class="dollar">Play For Free<span></span></h5>
+						<div class="btn_con center">
+							<a class="btn" href="javascript:;">SELECT</a>
+						</div>
+				 	</li>
+				</ul>
+				<ul class="v_con semi_two_con">
+					<li class="cells">
+						<h3 class="h3">Enter the Koprulu Sector</h3>
+					</li><!--
+				 --><li class="cells campaign_desc">
+						<h4><span class="ball"><img src="img/img_ball.webp" alt="ball">Free</span></h4>
+						<ul class="v_con three_con">
+							<li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign01.webp" alt="campaign 1th image">
+								</div>
+								<h4>Vast Campaigns of War</h4>
+								<h5>Play through sweeping single-player campaigns with a combined total of over 70 missions from Wings of Liberty®, Heart of the Swarm®, Legacy of the Void® and Nova Covert Ops.</h5>
+							</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign02.webp" alt="campaign 2th image">
+								</div>
+								<h4>Co-Op Commanders</h4>
+								<h5>Group up online with other players in Co-Op Commander Mode and play as Raynor, Kerrigan, Artanis, Swann, Zagara, Vorazun or Karax.</h5>
+						 	</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign03.webp" alt="campaign 3th image">
+								</div>
+								<h4>Weekly Mutators</h4>
+								<h5>Play a challenging Co-op scenario every week as your Commanders gain experience and adapt to an ever-shifting battlefield.</h5>
+						 	</li>
+						</ul>
+						<h4><span class="ball"><img src="img/img_ball_active.webp" alt="ball premium">Premium</span></h4>
+						<ul class="v_con three_con">
+							<li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign04.webp" alt="campaign 4th image">
+								</div>
+								<h4>Vast Campaigns of War</h4>
+								<h5>Play through sweeping single-player campaigns with a combined total of over 70 missions from Wings of Liberty®, Heart of the Swarm®, Legacy of the Void® and Nova Covert Ops.</h5>
+							</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign05.webp" alt="campaign 5th image">
+								</div>
+								<h4>Co-Op Commanders</h4>
+								<h5>Group up online with other players in Co-Op Commander Mode and play as Raynor, Kerrigan, Artanis, Swann, Zagara, Vorazun or Karax.</h5>
+						 	</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign06.webp" alt="campaign 6th image">
+								</div>
+								<h4>Weekly Mutators</h4>
+								<h5>Play a challenging Co-op scenario every week as your Commanders gain experience and adapt to an ever-shifting battlefield.</h5>
+						 	</li>
+						</ul>
+				 	</li>
+				</ul>
+				<hr>
+				<ul class="v_con semi_two_con">
+					<li class="cells">
+						<h3 class="h3">Digital Deluxe</h3>
+						<h4>If you purchase the Digital Deluxe, you'll also receive these goodies:</h4>
+					</li><!--
+				 --><li class="cells campaign_desc">
+						<h4><span class="ball"><img src="img/img_ball_active.webp" alt="ball premium">Premium</span></h4>
+						<ul class="v_con three_con">
+							<li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign07.webp" alt="campaign 7th image">
+								</div>
+								<h4>Vast Campaigns of War</h4>
+								<h5>Play through sweeping single-player campaigns with a combined total of over 70 missions from Wings of Liberty®, Heart of the Swarm®, Legacy of the Void® and Nova Covert Ops.</h5>
+							</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign08.webp" alt="campaign 8th image">
+								</div>
+								<h4>Co-Op Commanders</h4>
+								<h5>Group up online with other players in Co-Op Commander Mode and play as Raynor, Kerrigan, Artanis, Swann, Zagara, Vorazun or Karax.</h5>
+						 	</li><!--
+						 --><li class="cells">
+								<div class="campaign_img_con ratio_16x9">
+									<img src="img/img_campaign09.webp" alt="campaign 9th image">
+								</div>
+								<h4>Weekly Mutators</h4>
+								<h5>Play a challenging Co-op scenario every week as your Commanders gain experience and adapt to an ever-shifting battlefield.</h5>
+						 	</li>
+						</ul>
+				 	</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- footer -->
+		<footer id="footer" class="sections section_08">
+			<div class="footer_fixed_bg"></div>
+			<div class="gradiant"></div>
+			<div class="width_con center">
+				<ul class="sns_con">
+					<li class="sns">
+						<a href="javascript:;">
+							<i class="fa-brands fa-x-twitter fa-fw"></i>
+						</a>
+					</li>
+					<li class="sns">
+						<a href="javascript:;">
+							<i class="fa-brands fa-youtube fa-fw"></i>
+						</a>
+					</li>
+					<li class="sns">
+						<a href="javascript:;">
+							<i class="fa-brands fa-facebook-f fa-fw"></i>
+						</a>
+					</li>
+					<li class="sns">
+						<a href="javascript:;">
+							<i class="fa-brands fa-twitch fa-fw"></i>
+						</a>
+					</li>
+				</ul>
+				<img src="img/ci_blizzard_w.svg" alt="blizzard icon">
+				<h5>©2024 Blizzard Entertainment, Inc.</h5>
+				<h5>All trademarks referenced herein are the properties of their respective owners.</h5>
+				<ul class="company_lists">
+					<li class="company">
+						<a href="javascript:;">
+							Careers
+						</a>
+					</li>
+					<li class="company">
+						<a href="javascript:;">
+							about
+						</a>
+					</li>
+					<li class="company">
+						<a href="javascript:;">
+							Support
+						</a>
+					</li>
+					<li class="company">
+						<a href="javascript:;">
+							Contact Us
+						</a>
+					</li>
+					<li class="company">
+						<a href="javascript:;">
+							Press
+						</a>
+					</li>
+				</ul>
+				<div class="esrb">
+					<img src="img/img_footer_esrb.svg" alt="esrb image">
+					<div class="esrb_desc">
+						<h5>Blood and Gore</h5>
+						<h5>Language</h5>
+						<h5>Suggestive Themes</h5>
+						<h5>Use of Alcohol and Tobacco</h5>
+						<h5>Violence</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- script -->
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script>
+		// YouTube API가 로드되면 호출되는 함수
+		function onYouTubeIframeAPIReady() {
+			const viedeTumbnail = document.getElementById('video_thumbnail');
+			const playBtn = document.getElementById('play_btn');
+			const eventArr = [viedeTumbnail, playBtn];
+			eventArr.forEach(content => {
+				content.addEventListener('click', () => {
+					const iframe = document.getElementById('video_iframe');
+					iframe.style.display = 'block';  // iframe을 보이게 설정
+					document.getElementById('video_thumbnail').style.display = 'none';  // 썸네일 숨기기
+					document.getElementById('play_btn').style.display = 'none';  // 플레이 버튼 숨기기
+
+					// YouTube API를 사용하여 영상 자동 재생
+					const player = new YT.Player('video_iframe', {
+						events: {
+							'onReady': function(event) {
+								event.target.playVideo();  // 영상 자동 재생
+							}
+						}
+					});
+				});
+			});
+        }
+	</script>
+</body>
+</html>

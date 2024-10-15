@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    font-family: 'Font Awesome 6 Pro';
+    content: '\f053';
+}
+[dir='rtl'] .slick-prev:before
+{
+    font-family: 'Font Awesome 6 Pro';
+    content: '\f054';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    font-family: 'Font Awesome 6 Pro';
+    content: '\f054';
+}
+[dir='rtl'] .slick-next:before
+{
+    font-family: 'Font Awesome 6 Pro';
+    content: '\f053';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+ul.v_con > .slick-list > .slick-track > li.cells{ position: relative; display: inline-block; margin: 0 var(--mrgn-half) var(--mrgn); width: calc(100% - var(--mrgn-x2));}
+ul.v_con > .slick-list > .slick-track > li.cells.box{ background: var(--color-k); transform: scale(1); transition: all 100ms ease-in-out;}
+ul.v_con > .slick-list > .slick-track > li.cells.box:has(> a){ cursor: pointer;}
+ul.v_con > .slick-list > .slick-track > li.cells.box:hover:has(> a){}
+ul.v_con > .slick-list > .slick-track > li.cells.box:active:has(> a){ transform: scale(.975);}
+
+ul.v_con > .slick-list > .slick-track > li.cells.box > a{ display: block; aspect-ratio: inherit; border-radius: inherit; background: #f99; transition: inherit; box-shadow: 0 10px 30px -10px var(--color-k-065); filter: brightness(1); text-decoration: none;}
+ul.v_con > .slick-list > .slick-track > li.cells.box:hover > a{ box-shadow: 0 10px 30px -10px var(--color-k); filter: brightness(1.1);}/*바뀌는 속성만 적어주세요*/
+ul.v_con > .slick-list > .slick-track > li.cells.box:active > a{ box-shadow: 0 1px 3px -1px var(--color-k); filter: brightness(.9);}
+ul.v_con > .slick-list > .slick-track > li.cells > img,
+ul.v_con > .slick-list > .slick-track > li.cells > a > img{ width: 100%; border-radius: inherit;}
+ul.v_con.two_con   > .slick-list > .slick-track > li.cells{ width: calc(50%     - var(--mrgn-x2));}
+ul.v_con.three_con > .slick-list > .slick-track > li.cells{ width: calc(33.333% - var(--mrgn-x2));}
+ul.v_con.four_con  > .slick-list > .slick-track > li.cells{ width: calc(25%     - var(--mrgn-x2));}
+ul.v_con.six_con   > .slick-list > .slick-track > li.cells{ width: calc(16.666% - var(--mrgn-x2));}
+ul.v_con.ub_two_con > .slick-list > .slick-track > li.cells:nth-child(2n-1){ width: calc(33.333% - var(--mrgn-x2));}
+ul.v_con.ub_two_con > .slick-list > .slick-track > li.cells:nth-child(2n){ width: calc(66.666% - var(--mrgn-x2));}
+ul.v_con.rub_two_con > .slick-list > .slick-track > li.cells:nth-child(2n-1){ width: calc(66.666% - var(--mrgn-x2));}
+ul.v_con.rub_two_con > .slick-list > .slick-track > li.cells:nth-child(2n){ width: calc(33.333% - var(--mrgn-x2));}
+
+
+
+ul.stack_card  > .slick-list > .slick-track > li.cells{ position: relative; opacity: 0; filter: blur(5px) brightness(1.25);}
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-active + .slick-slide{ transform: scale(.5) translateX(-320%);}
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-slide.slick-active{ opacity: 1; filter: blur(2px) brightness(1.15); transform: scale(.75) translateX(75%); z-index: 3;}
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-cloned.slick-active,
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-slide{ opacity: 0; transform: scale(.5) translateX(320%); z-index: 2; transition: all 300ms ease-in-out;}
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-slide.slick-current + .slick-slide{ transform: scale(.75) translateX(-75%);}
+ul.stack_card  > .slick-list > .slick-track > li.cells.slick-slide.slick-current{ opacity: 1;  filter: blur(0) brightness(1); transform: scale(1); z-index: 4;}
+ul.stack_card.Lock_first_arrow .slick-prev,
+ul.stack_card.Lock_last_arrow .slick-next{ pointer-events: none; opacity: .5;} /*스타일 수정해서 사용*/
+
+
+
+.slick-list{ -webkit-mask-image: linear-gradient(90deg, transparent 0, #fff 18px, #fff calc(100% - 18px), transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #fff 18px, #fff calc(100% - 18px), transparent 100%);}
+/*
+슬릭 재설계 구성
+
+ul.v_con.slick-initialized.slick-slider : 슬릭으로인하여 초기화된 구역, 해당 슬릭영역 컨테이너
+    .slick-prev.slick-arrow             : 화살표(이전)
+    .slick-list.draggable               : 리스트 영역(overflow: hidden; 걸려있는 영역)
+        .slick-track                    : 슬릭 슬라이드 트랙. 모든걸 품고 직접 움직이는 영역
+            li.cells.box.slick-slide.slick-cloned        : Infinite(반복)시 복제된 엘리먼트들
+            li.cells.box.slick-slide.slick-active        : 현재 눈에 보이는 엘리먼트들
+            li.cells.box.slick-slide.slick-active.slick-current  : 현재 기준 슬라이드가 몇번째 
+            li.cells.box
+            li.cells.box
+            li.cells.box
+
+    .slick-next.slick-arrow             : 화살표(다음)
+    .slick-dots                         : 땡땡이ㅎ
+
+*/
+ul.slick-dots{ bottom: 0;}
+ul.slick-dots > li{ width: 14px; height: 14px; border-radius: 7px; box-shadow: inset 0 0 0 3px var(--color-point); transition: all 100ms linear;}
+ul.slick-dots > li:hover{ box-shadow: inset 0 0 0 8px var(--color-point);}
+ul.slick-dots > li.slick-active{ width: 39px; box-shadow: inset 0 0 0 8px var(--color-point); cursor: default;}
+ul.slick-dots > li *{ display: none;}
+
+.slick-arrow{ width: 55px; height: 55px; margin-top: -18px; border-radius: 6px; z-index: 1; transition: all 0.25s linear; }
+.slick-arrow:focus{ background: var(--color-point);}
+.slick-arrow:hover{ background: #000;}
+.slick-arrow.slick-prev{ left: -8px; background: url(../img/btns/btn_left.webp); background-size: cover; }
+.slick-arrow.slick-prev::before { display: none; }
+.slick-arrow.slick-prev:hover{ background: url(../img/btns/btn_left_hover.webp); background-size: cover; }
+.slick-arrow.slick-next{ right: -8px; background: url(../img/btns/btn_right.webp); background-size: cover; }
+.slick-arrow.slick-next::before{ display: none;}
+.slick-arrow.slick-next:hover{ right: -8px; background: url(../img/btns/btn_right_hover.webp); background-size: cover;}
+
