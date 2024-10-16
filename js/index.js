@@ -157,6 +157,10 @@ window.onload = function() {
         document.documentElement.classList.add('loading_animate_01');
             setTimeout(() => {
                 document.documentElement.classList.remove('loading_animate_01', 'not_yet');
+                setTimeout(() => {
+                    document.querySelector('.logo_con').remove();
+                    document.querySelector('canvas').remove();
+                }, 2000);
             }, 3000);
     }, 4500);
 }

@@ -2,7 +2,7 @@
 
 /* header section00 */
 body.top #header.sections.section_00 { top: 0; height: 88px; background: inherit; }
-#header.sections.section_00 { position: fixed; padding: 0 var(--mrgn); left: 50%; top: 10px; height: 68px; background: rgba(51, 62, 71, .85); border-radius: 8px; box-shadow: 0 10px 30px -10px var(--color-k-050); backdrop-filter: blur(10px); transform: translateX(-50%); transition: all .35s ease-in-out; opacity: 1; z-index: 2; }
+#header.sections.section_00 { position: fixed; padding: 0 var(--mrgn); left: 50%; top: 10px; height: 68px; background: rgba(51, 62, 71, .85); border-radius: 8px; box-shadow: 0 10px 30px -10px var(--color-k-050); backdrop-filter: blur(10px); transform: translateX(-50%); transition: all .35s ease-in-out; opacity: 1; z-index: 999; }
 #header.sections.section_00 > .width_con { height: 100%; }
 body.top #header.sections.section_00 > .width_con > a.btn_home { top: 7px; width: 70px; }
 #header.sections.section_00 > .width_con > a.btn_home { position: absolute; left: 0; top: 4px; display: block; width: 60px; transition: all .35s ease-in-out; }
