@@ -21,8 +21,8 @@ function initScene() {
 
     // cam perspective, PerspectiveCamera( fov : Number(수직시야), aspect : Number, near(거리) : Number, far(거리) : Number )
     cam = new THREE.PerspectiveCamera(800, window.innerWidth/window.innerHeight, 1, 10000);
-    cam.position.y = -100;
-    cam.position.z = 2000;
+    cam.position.y = -500;
+    cam.position.z = 3000;
     scene.add(cam);
 
     // render setting, 캔버스 color, WebGLRenderer에 alpha값을 켜서 배경 투명화
@@ -31,7 +31,8 @@ function initScene() {
     });
     // renderer.setClearColor(0x000000, 1);
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    // document.body.appendChild(renderer.domElement);
+    document.querySelector('#visual > .width_con').appendChild(renderer.domElement);
 
     particleSetup();
 }
@@ -99,7 +100,7 @@ function animate() {
     // }
 
     let intensityTarget = 0.6;  // 목표 세기
-    let intensitySpeed = 0.001;  // 세기 변경 속도
+    let intensitySpeed = 0.01;  // 세기 변경 속도
     if (sceneLight.intensity < intensityTarget) {
         sceneLight.intensity += intensitySpeed;  // 목표 세기까지 점진적으로 증가
         if (sceneLight.intensity > intensityTarget) {

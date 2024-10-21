@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 초기 로드 시 높이 조정
     fixWidthConHeight();
 
-    // 리사이징 할때마다 이벤트 발생
+    
+    // resize event
     window.addEventListener('resize', function() {
         fixWidthConHeight();
         resize();
