@@ -62,3 +62,7 @@ button {
 	cursor: pointer;
 	border: none;
 }
+input, textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}

@@ -5,16 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const visualWidthCon = document.querySelector('#visual.section_01 .width_con');
         visualWidthCon.style.height = `${window.innerHeight}px`
     }
-
     // 초기 로드 시 높이 조정
     fixWidthConHeight();
 
+    // vh 초기화
+    const setVh = () => {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+    }
+    setVh();
     
     // resize event
     window.addEventListener('resize', function() {
         fixWidthConHeight();
         resize();
         raceContainerSize();
+        setVh();
     });
 
     const scrollEvent = (scrollPos) => {

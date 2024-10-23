@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 :root {
+	--vh: 100%;
+
 	--mrgn-half: 20px;
 	--mrgn: calc(var(--mrgn-half) * 2);    /* 40*/
 	--mrgn-x2: calc(var(--mrgn-half) * 4); /* 80*/
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5, h6 { position: relative; line-height: 1em;}
 h1, h2, h3 { text-transform: uppercase; line-height: .8em; }
 h1 { font-family: "Orbitron", sans-serif; font-size: 96px; line-height: .65em; font-weight: 700; }
 h2 { font-family: "Orbitron", sans-serif; font-size: 48px; line-height: 1em; font-weight: 700; }
-h3 { font-family: "Orbitron", sans-serif; font-size: 32px; line-height: .65em; font-weight: 700; }
+h3 { font-family: "Orbitron", sans-serif; font-size: 32px; line-height: 1em; font-weight: 700; }
 h4 { font-size: 18px; font-weight: 500; color: var(--color-font-sub_01); line-height: 1.2em; }
 h5 { font-size: 14px; font-weight: 500; color: var(--color-font-sub_02); line-height: 1.2em; }
 h6 { font-size: 12px; font-weight: 500; color: var(--color-font-sub_02); }
@@ -79,6 +81,52 @@ h6 { font-size: 12px; font-weight: 500; color: var(--color-font-sub_02); }
 .title_con { position: relative; margin: 0 0 var(--mrgn-x2) 0; }
 .title_con.middle { position: absolute; top: 50%; transform: translateY(-50%); }
 .title_con.middle.center { left: 50%; transform: translate(-50%, -50%); }
+
+.sections .width_con .title_con h2, 
+.sections .width_con .title_con h3, 
+.sections .width_con .title_con h4, 
+.sections .width_con .title_con h5,
+.sections .width_con .title_con h6 { opacity: 1; animation: text_animation 400ms linear; animation-play-state: running; }
+.sections .width_con .title_con h4::before { opacity: 1; animation: text_animation 400ms linear; animation-play-state: running; }
+#visual .width_con .title_con h4,
+#visual .width_con .title_con h5,
+#visual .width_con .title_con h4::before { animation: none; }
+
+.sections .width_con .title_con h1,
+.sections .width_con .title_con h2 {}
+.sections .width_con .title_con h4 {}
+.sections .width_con .title_con h5 {}
+.sections .width_con .title_con h6 {}
+
+.sections.wait_scroll .width_con .title_con h2, 
+.sections.wait_scroll .width_con .title_con h3, 
+.sections.wait_scroll .width_con .title_con h4, 
+.sections.wait_scroll .width_con .title_con h5,
+.sections.wait_scroll .width_con .title_con h6 { opacity: 0; animation-play-state: paused; }
+.sections.wait_scroll .width_con .title_con h4::before { width: var(--mrgn-x4); opacity: 0; animation-play-state: paused; }
+
+@keyframes text_animation {
+	0% {
+		opacity: 0;
+		clip-path: inset(0 100% 0 0);
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		clip-path: inset(0 0 0 0);
+	}
+}
 
 .ratio_1x1{  aspect-ratio:  1/1;}
 .ratio_1x2{  aspect-ratio:  1/2;}
@@ -130,19 +178,14 @@ ul.v_con.semi_two_con > li.cells:nth-child(2) { width: calc(80% - var(--mrgn)); 
 .ball > img { width: 30px; height: 28px; }
 
 /* loading */
-.logo_con { position: absolute; top: 390px; left: 50%; transform: translate(-50%, 0%) scale(1); filter: saturate(1) contrast(1); opacity: 0; transition: all 2000ms cubic-bezier(.59,.31,.5,1); z-index: 2; }
-.logo_con:after{ position: absolute; content: ''; top: 0; left: 50%; width: 200%; height: 100%; background: #000; opacity: 0; transform: translateX(-50%); transition: inherit; mix-blend-mode: overlay; }
-.logo_con > div.img_con { position: absolute; top: 0; left: 50%; padding: 0; width: inherit; height: 100%; transform: translateX(-50%); transition: inherit; z-index: 2; }
-.logo_con img { width: inherit; }
-.logo_con > img { position: relative; opacity: 1; transition: all 500ms linear 6500ms; z-index: 1; }
-
 #visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con { position: relative; transform: scale(1); filter: saturate(1) contrast(1); opacity: 1; transition: all 5000ms cubic-bezier(.59,.31,.5,1), filter 2500ms ease-out 2500ms; z-index: 2; }
-#visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con::after { position: absolute; content: ''; top: 0; left: 50%; width: 200%; height: 100%; background: #000; opacity: 0; transform: translateX(-50%); transition: inherit; mix-blend-mode: overlay; }
+#visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con::after { position: absolute; content: ''; top: 0; left: 50%; width: 200%; height: 100%; background: #000; opacity: 0; transform: translateX(-50%); transition: inherit; mix-blend-mode: multiply; }
 #visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con > div.img_con { position: absolute; top: 0; left: 50%; padding: 0; width: inherit; height: 100%; transform: translateX(-50%); transition: inherit; z-index: 2; }
 #visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con img { width: inherit; }
 #visual.sections.section_01 > .width_con > .title_con > h1.h1_logo_con > img { position: relative; opacity: 1; transition: all 500ms linear 6500ms; z-index: 1; }
 
-.logo_con .spark{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; opacity: 0;}
+.logo_con { width: 100%; }
+.logo_con .spark{ position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 300px; opacity: 0; z-index: 2;}
 .logo_con .spark div{ width: inherit; aspect-ratio: 1/1; background: url(../img/bg_spark.webp) no-repeat 0% 0% / 500%;}
 
 #visual.sections.section_01 > .width_con > .title_con h4,
@@ -164,7 +207,7 @@ html.loading .logo_con > div:nth-child(6) { padding: 0 0 0 15%; }
 html.loading .logo_con > div:nth-child(7) { padding: 0 0 0 30%; }
 html.loading .logo_con > div:nth-child(8) { padding: 0 0 0 45%; }
 html.loading .logo_con > div:nth-child(9) { padding: 0 0 0 60%; }
-html.loading #visual.sections.section_01 > .fixed_bg { background: #000 url(../img/title_split/transparent.webp) no-repeat 50% 0%; background-size: cover; }
+html.loading #visual.sections.section_01 > .fixed_bg { background: #000 url(../img/title_split/transparent.webp) 50% 0% no-repeat; background-size: cover; }
 html.loading .h1_logo_con { filter: saturate(0) contrast(50) !important; opacity: 0 !important; transform: scale(.85) !important; }
 html.loading .h1_logo_con::after { opacity: 1 !important; }
 html.loading .h1_logo_con > img { opacity: 0 !important; }

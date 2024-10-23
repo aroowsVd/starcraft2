@@ -39,7 +39,7 @@ function initScene() {
 function particleSetup() {
     let loader = new THREE.TextureLoader();
 
-    loader.load(url, function(texture) {
+    loader.load('../img/img_smoke.png', function(texture) {
         portalGeo = new THREE.PlaneBufferGeometry(350, 350);
         portalMaterial = new THREE.MeshStandardMaterial({
             map: texture,
@@ -125,6 +125,11 @@ function animate() {
         if (portalLight.decay > 6.7) {
             portalLight.decay = 6.7;
         }
+    }
+
+    let w_w = window.innerWidth;
+    if (w_w <= 550) {
+        cam.position.y = -300;
     }
     
     renderer.render(scene, cam);

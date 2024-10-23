@@ -29,6 +29,7 @@ body.top #header.sections.section_00 > .width_con > .nav_con > ul.nav_customer {
 #visual.sections.section_01 { overflow: hidden; }
 #visual.sections.section_01 > .fixed_bg { background: #000 url(../img/bg_fixed_01.webp) 50% 0 no-repeat; background-size: cover; transition: all 4000ms ease-in 1500ms; }
 #visual.sections.section_01 > .width_con { min-height: 900px; margin-bottom: var(--mrgn-x7); }
+#visual.sections.section_01 > .width_con .h1_logo_con{ }
 #visual.sections.section_01 > .width_con > .title_con { opacity: 1; z-index: 2; }
 #visual.sections.section_01 > .width_con > .title_con > h4,
 #visual.sections.section_01 > .width_con > .title_con > h5 { color: #fff; }
@@ -562,10 +563,10 @@ animation-timing-function: linear; animation-iteration-count: infinite; animatio
 
 
 /* footer section08 */
-#footer.sections.section_08 {}
+#footer.sections.section_08 { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
 #footer.sections.section_08::before { position: absolute; content: ''; left: 0; top: 0; width: 100%; height: 136px; background: url(../img/footer_divider_top.webp) center no-repeat; z-index: 1; }
 #footer.sections.section_08::after { position: absolute; content: ''; left: 0; bottom: 0; width: 100%; height: 136px; background: url(../img/footer_divider_bottom.webp) center no-repeat; }
-#footer.sections.section_08 > .footer_fixed_bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../img/footer_bg.webp) no-repeat; background-attachment: fixed; filter: brightness(30%); }
+#footer.sections.section_08 > .footer_fixed_bg { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url(../img/footer_bg.webp) no-repeat; filter: brightness(30%); }
 #footer.sections.section_08 > .gradiant { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: linear-gradient(var(--color-font-main) 0%, transparent 20%, transparent 80% , var(--color-font-main) 100%); }
 #footer.sections.section_08 > .width_con {}
 #footer.sections.section_08 > .width_con > ul.sns_con { display: flex; justify-content: center; gap: var(--mrgn-half); }
