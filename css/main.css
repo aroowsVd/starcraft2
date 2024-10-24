@@ -9,6 +9,7 @@ body.top #header.sections.section_00 > .width_con > a.btn_home { top: 7px; width
 #header.sections.section_00 > .width_con > a.btn_home > img { width: 100%; }
 #header.sections.section_00 > .width_con > .nav_con {}
 #header.sections.section_00 > .width_con > .nav_con > i { display: none; }
+body.top #header.sections.section_00 > .width_con > .nav_con { top: -10px !important; }
 body.top #header.sections.section_00 > .width_con > .nav_con > ul.nav { top: 54px; }
 #header.sections.section_00 > .width_con > .nav_con > ul.nav { position: absolute; right: calc(var(--mrgn-half) * -1); top: 25px; transition: all .35s ease-in-out; }
 #header.sections.section_00 > .width_con > .nav_con > ul.nav > li { display: inline-block; margin: 0 var(--mrgn-half); transition: inherit; }
